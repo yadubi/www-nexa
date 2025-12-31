@@ -1,0 +1,38 @@
+'use client';
+
+import { useLanguage } from '@/lib/i18n/language-context';
+
+export default function Focus() {
+  const { t } = useLanguage();
+
+  return (
+    <section id="focus" className="relative py-32 border-t border-gold/10">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl font-light text-white mb-16 tracking-tight">
+          {t.focus.title}
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {t.focus.items.map((item, index) => (
+            <div
+              key={index}
+              className="group relative p-8 border border-gold/10 hover:border-gold/30 transition-all duration-300 bg-black/50 hover:bg-black/80"
+            >
+              {/* Subtle hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-transparent transition-all duration-300" />
+              
+              <div className="relative z-10">
+                <div className="text-sm text-gold/60 mb-2 tracking-widest">
+                  {String(index + 1).padStart(2, '0')}
+                </div>
+                <h3 className="text-lg text-gray-200 tracking-wide">
+                  {item}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
