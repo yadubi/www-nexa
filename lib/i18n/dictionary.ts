@@ -76,7 +76,7 @@ export const dictionary: Record<Language, Dictionary> = {
     },
     // Hero Section
     hero: {
-      headline: 'Discipline. Conviction. Long-Term Value.',
+      headline: 'Discipline.\nConviction.\nLong-Term Value.',
       subheading: 'We are a long-term oriented investment firm focused on identifying asymmetric opportunities across global markets through disciplined research and conviction-led decision making.',
       cta: 'Request an Intro',
     },
