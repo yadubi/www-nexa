@@ -8,7 +8,7 @@ This is a minimal HTTP server written in Go that returns "hello im" when accesse
 
 ## Requirements
 
-- Go 1.16 or higher
+- Go 1.20 or higher
 
 ## Usage
 
