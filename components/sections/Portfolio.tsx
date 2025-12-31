@@ -11,7 +11,7 @@ export default function Portfolio() {
       <div 
         className="absolute inset-0 opacity-[0.015]"
         style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201, 169, 97, 0.1) 35px, rgba(201, 169, 97, 0.1) 36px)`,
+          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(var(--color-gold-rgb), 0.1) 35px, rgba(var(--color-gold-rgb), 0.1) 36px)`,
         }}
       />
 

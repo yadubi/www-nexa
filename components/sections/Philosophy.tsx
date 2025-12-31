@@ -12,7 +12,7 @@ export default function Philosophy() {
       <div 
         className="absolute inset-0 opacity-[0.015]"
         style={{
-          backgroundImage: `repeating-linear-gradient(0deg, rgba(201, 169, 97, 0.1) 0px, transparent 1px, transparent 2px, rgba(201, 169, 97, 0.1) 3px)`,
+          backgroundImage: `repeating-linear-gradient(0deg, rgba(var(--color-gold-rgb), 0.1) 0px, transparent 1px, transparent 2px, rgba(var(--color-gold-rgb), 0.1) 3px)`,
           backgroundSize: '100% 3px'
         }}
       />

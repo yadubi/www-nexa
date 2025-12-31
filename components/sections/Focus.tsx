@@ -12,7 +12,7 @@ export default function Focus() {
       <div 
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `radial-gradient(circle, rgba(201, 169, 97, 0.15) 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, rgba(var(--color-gold-rgb), 0.15) 1px, transparent 1px)`,
           backgroundSize: '40px 40px'
         }}
       />

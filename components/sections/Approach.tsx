@@ -11,7 +11,7 @@ export default function Approach() {
       <div 
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `linear-gradient(rgba(201, 169, 97, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 169, 97, 0.1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(var(--color-gold-rgb), 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--color-gold-rgb), 0.1) 1px, transparent 1px)`,
           backgroundSize: '80px 80px'
         }}
       />

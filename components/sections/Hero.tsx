@@ -1,15 +1,9 @@
 'use client';
 
 import { useLanguage } from '@/lib/i18n/language-context';
-import { useEffect, useState } from 'react';
 
 export default function Hero() {
   const { t } = useLanguage();
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -27,7 +21,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(201, 169, 97, 0.15) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(var(--color-gold-rgb), 0.15) 1px, transparent 0)`,
           backgroundSize: '48px 48px'
         }}
       />
@@ -36,15 +30,10 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/3 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/3 rounded-full blur-3xl" />
 
-      <div className={`relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center animate-fade-in-up">
         {/* Main headline - Editorial style with generous spacing */}
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider text-white mb-12 leading-[1.2]">
-          {t.hero.headline.split('.').map((part, index, array) => (
-            <span key={index} className="block mb-2">
-              {part.trim()}
-              {index < array.length - 1 && '.'}
-            </span>
-          ))}
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider text-white mb-12 leading-[1.2] whitespace-pre-line">
+          {t.hero.headline}
         </h1>
 
         {/* Thin divider */}

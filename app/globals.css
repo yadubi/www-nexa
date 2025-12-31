@@ -8,6 +8,9 @@
   --color-gold: #c9a961;
   --color-gold-light: #d4b57a;
   --color-gold-dark: #b8985f;
+  
+  /* RGB values for patterns with alpha */
+  --color-gold-rgb: 201, 169, 97;
 }
 
 @theme inline {
@@ -16,6 +19,7 @@
   --color-gold: #c9a961;
   --color-gold-light: #d4b57a;
   --color-gold-dark: #b8985f;
+  --color-gold-rgb: 201, 169, 97;
 }
 
 * {

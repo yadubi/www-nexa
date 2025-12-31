@@ -11,7 +11,7 @@ export default function About() {
       <div 
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `linear-gradient(45deg, rgba(201, 169, 97, 0.1) 25%, transparent 25%, transparent 75%, rgba(201, 169, 97, 0.1) 75%, rgba(201, 169, 97, 0.1)), linear-gradient(45deg, rgba(201, 169, 97, 0.1) 25%, transparent 25%, transparent 75%, rgba(201, 169, 97, 0.1) 75%, rgba(201, 169, 97, 0.1))`,
+          backgroundImage: `linear-gradient(45deg, rgba(var(--color-gold-rgb), 0.1) 25%, transparent 25%, transparent 75%, rgba(var(--color-gold-rgb), 0.1) 75%, rgba(var(--color-gold-rgb), 0.1)), linear-gradient(45deg, rgba(var(--color-gold-rgb), 0.1) 25%, transparent 25%, transparent 75%, rgba(var(--color-gold-rgb), 0.1) 75%, rgba(var(--color-gold-rgb), 0.1))`,
           backgroundSize: '60px 60px',
           backgroundPosition: '0 0, 30px 30px'
         }}

@@ -11,7 +11,7 @@ export default function Insights() {
       <div 
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `repeating-radial-gradient(circle at 0 0, transparent 0, rgba(201, 169, 97, 0.1) 40px, transparent 80px)`,
+          backgroundImage: `repeating-radial-gradient(circle at 0 0, transparent 0, rgba(var(--color-gold-rgb), 0.1) 40px, transparent 80px)`,
         }}
       />
 
